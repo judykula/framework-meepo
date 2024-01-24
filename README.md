@@ -18,8 +18,8 @@ ID Generator ，id发号器。这个是一个server 服务，最好搭配client�
 需要关心两个配置：
 
 ```
-- sys.snowflake.workid： 机器的编号，默认为1。！如果有多个节点部署的话，必须要"手动配置"这个参数，不能重复
-- sys.snowflake.datacenterId：数据中心的编号，默认为1。一般情况下不需要配置，有必要的话也手动配置。
+- sys.snowflake.workid： 机器的编号，默认为1。！有多个节点部署的话必须要"手动配置"，不能重复
+- sys.snowflake.datacenterId：数据中心的编号，默认为1。多个节点部署的话也要手动配置。
 ```
 
 ### 如何处理时钟回拨问题？
