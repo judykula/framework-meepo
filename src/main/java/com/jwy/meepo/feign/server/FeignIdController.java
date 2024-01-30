@@ -11,7 +11,6 @@
  */
 package com.jwy.meepo.feign.server;
 
-import com.jwy.medusa.mvc.MyResponse;
 import com.jwy.meepo.generator.IdGenerator;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,9 +36,8 @@ public class FeignIdController {
     private IdGenerator idGenerator;
 
     @GetMapping("/next")
-    public MyResponse nextId() {
-        long l = idGenerator.nextId();
-        return MyResponse.ofSuccess(l);
+    public long nextId() {
+        return idGenerator.nextId();
     }
 
 }

@@ -5,7 +5,7 @@
 
 ## meepo
 
-ID Generator ，id发号器。这个是一个server 服务，最好搭配client使用
+ID Generator ，id发号器。这个是一个server 服务，最好搭配client "arcwarden" 使用
 
 ## 1.0.0
 
